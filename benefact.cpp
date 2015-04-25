@@ -71,9 +71,9 @@ int main ( ) {
             adj[i].clear();
 
         for ( int i = 1; i <= n-1; ++i ) {
-            scanf ( "%d %d %d" , &from , &to , &cost );
-            adj[from].push_back ( make_pair ( cost , to ) );
-            adj[to].push_back ( make_pair ( cost , from ) );
+            scanf ( "%d %d %d", &from, &to, &cost );
+            adj[from].push_back ( make_pair ( cost, to ) );
+            adj[to].push_back ( make_pair ( cost, from ) );
         }
 
         int start = BFS ( 1 );
