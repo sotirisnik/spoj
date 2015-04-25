@@ -8,7 +8,7 @@
 
 using namespace std;
 
-int f , s , g , u , d;
+int f, s, g, u, d;
 bool visited[MAXN];
 int D[MAXN];
 queue <int> q;
@@ -25,9 +25,9 @@ int main ( ) {
 
     //freopen( "in.txt","r",stdin);
 
-    //scanf ( "%d %d %d %d %d" , &f , &s , &g , &u ,&d );
+    //scanf ( "%d %d %d %d %d", &f, &s, &g, &u,&d );
 
-    readi ( f ) , readi ( s ) , readi ( g ) , readi ( u ) , readi ( d );
+    readi ( f ), readi ( s ), readi ( g ), readi ( u ), readi ( d );
 
     for ( int i = 0; i < MAXN; i++) 
         D[i] = -1;
@@ -64,7 +64,7 @@ int main ( ) {
     }
 
     if ( sol != -1 ) {
-        printf ( "%d\n" , sol );
+        printf ( "%d\n", sol );
     }else {
         printf ( "use the stairs\n" );
     }
