@@ -11,7 +11,7 @@
 
 using namespace std;
 
-int t , n , from , to , cost;
+int t, n, from, to, cost;
 vector < list < edge > > adj(MAXN);
 bool visited[MAXN];
 int D[MAXN];
@@ -19,7 +19,7 @@ int D[MAXN];
 int BFS ( int start ) {
 
     for ( int i = 0; i < MAXN; ++i )
-        visited[i] = false , D[i] = -1;
+        visited[i] = false, D[i] = -1;
 
     D[start] = 0;
 
@@ -61,11 +61,11 @@ int main ( ) {
 
     //freopen("in.txt","r",stdin);
 
-    scanf ( "%d" , &t );
+    scanf ( "%d", &t );
 
     while ( t-- ) {
 
-        scanf ( "%d" , &n );
+        scanf ( "%d", &n );
 
         for ( int i = 1; i <= n; ++i )
             adj[i].clear();
@@ -79,7 +79,7 @@ int main ( ) {
         int start = BFS ( 1 );
         int sol = BFS ( start );
 
-        printf ( "%d\n" , D[sol] );
+        printf ( "%d\n", D[sol] );
 
     }
 
